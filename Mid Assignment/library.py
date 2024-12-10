@@ -43,10 +43,7 @@ class Book:
         return self.__availability
 
 def view_all_books():
-    if not Library.book_list:
-        print("No books available now.")
-    else:
-        for book in Library.book_list:
+    for book in Library.book_list:
             book.view_book_info()
 
 def find_book_by_id(book_id):
